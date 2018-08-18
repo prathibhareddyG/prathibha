@@ -1,0 +1,8 @@
+<!sample web page>
+<html>
+<head>
+<title>hello</title>
+</head>
+<body bgcolor="red">
+</body>
+</html>

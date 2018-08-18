@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chessboard</title>
+	<script type="text/javascript">
+		var space = 1;
+for (var r=0; r<8; r++) {
+  var col = "";
+  for (var c=0; c<8; c++) { 
+    col += "<td data-pos='"+space+"'></td>"; space++; 
+  }
+  $("#chessboard").append("<tr>"+col+"</tr>");
+}
+		
+	</script>
+</head>
+<body>
+
+	<style type="text/css">
+		* {
+  margin: 0; 
+  padding: 0; 
+}
+
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+}
+
+#chessboard { 
+  padding: 0px; 
+  margin: 0 auto; 
+  border: 2px solid #181818; 
+}
+
+#chessboard tr td { 
+  width: 60px; 
+  height: 60px; 
+}
+
+#chessboard tr:nth-child(2n) td:nth-child(2n+1) { 
+  background: #9f9f9f; 
+}
+
+#chessboard tr:nth-child(2n+1) td:nth-child(2n) { 
+  background: #9f9f9f; 
+} 
+	</style>
+	
+ <h1>hi</h1>
+ <table border="2">
+ 	<tr>
+ 		<th>age</th>
+ 		<th>class</th>
+ 	</tr>
+ </table>
+</body>
+</html>
